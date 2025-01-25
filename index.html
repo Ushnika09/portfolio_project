@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <header class="bg-white shadow-md p-4 fixed w-full">
+    <header class="bg-white shadow-md p-2 fixed w-full ">
         <nav aria-label="Primary Navigation">
-            <div class="flex justify-between items-center mx-auto box-border w-full">
-                
-                <!-- Logo -->
-                <div class="logo flex flex-shrink-0 items-center justify-center sm:mx-10">
+            <div class="container mx-auto flex justify-center items-center">
+              <!-- Logo -->
+              <div class="logo flex items-center mx-10">
                     <img src="./img/logo.png" alt="personal portfolio logo" class="h-10 w-10 sm:h-14 sm:w-14 md:h-16 md:w-16">
+
                 </div>
                 
                 <!-- Mode Buttons -->
-                <div class="mode flex flex-shrink-0 items-center sm:mx-10 border-2 border-black">
+                <div class="mode flex  items-center sm:mx-10 border-2 border-black">
                     <button aria-label="Enable Day Mode" class="w-6 h-6 hover:scale-110 transition-all duration-300 ease-in-out border-2 border-black">
                         <img src="./img/sun.png" alt="Day Mode" class="w-full h-full">
                     </button>
@@ -31,39 +31,41 @@
                 <!-- Large Screen Menu (Hidden on small screens) -->
                 <div class="hidden sm:flex sm:mx-10">
                     <ul class="flex space-x-6 sm:space-x-10">
-                        <li class="menu"><a href="#home" class="text-sm sm:text-base hover:text-blue-500">Home</a></li>
-                        <li class="menu"><a href="#about" class="text-sm sm:text-base hover:text-blue-500">About</a></li>
-                        <li class="menu"><a href="#skills" class="text-sm sm:text-base hover:text-blue-500">Skills</a></li>
-                        <li class="menu"><a href="#services" class="text-sm sm:text-base hover:text-blue-500">Services</a></li>
-                        <li class="menu"><a href="#contact" class="text-sm sm:text-base hover:text-blue-500">Contact</a></li>
+                        <li class="menu"><a href="#home" >Home</a></li>
+                        <li class="menu"><a href="#about">About</a></li>
+                        <li class="menu"><a href="#skills">Skills</a></li>
+                        <li class="menu"><a href="#services">Services</a></li>
+                        <li class="menu"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
     
                 <!-- Hamburger Icon (Visible only on small screens) -->
                 <label for="menu-toggle" class="sm:hidden flex items-center p-2 text-black cursor-pointer">
-                    <img src="./img/menu-icon.png" alt="Menu" class="h-8 w-8">
+                    <img src="./img/menu-icon.png" alt="Menu" class="h-8 w-8 mx-10" >
                 </label>
     
                 <!-- Hidden Checkbox -->
-                <input type="checkbox" id="menu-toggle" class="hidden peer" />
+                <input type="checkbox" id="menu-toggle" class="hidden peer sm:hidden" />
+
     
                 <!-- Mobile Menu -->
-                <div id="mobile-menu" class="sm:hidden hidden peer-checked:flex flex-col items-center absolute top-16 left-0 w-full bg-white shadow-md py-4 transition-all duration-300 ease-in-out">
-                    <ul class="w-full">
-                        <li class="menu w-full text-center py-2 border-b border-gray-300">
-                            <a href="#home" class="block hover:bg-blue-100 hover:text-blue-500 transition-colors">Home</a>
+                <div id="mobile-menu" class="hidden peer-checked:flex sm:peer-checked:hidden flex-col items-center absolute top-16 left-0 w-full bg-white shadow-md py-4">
+
+                    <ul class="w-fit ">
+                        <li class="menu ">
+                            <a href="#home">Home</a>
                         </li>
-                        <li class="menu w-full text-center py-2 border-b border-gray-300">
-                            <a href="#about" class="block hover:bg-blue-100 hover:text-blue-500 transition-colors">About</a>
+                        <li class="menu">
+                            <a href="#about">About</a>
                         </li>
-                        <li class="menu w-full text-center py-2 border-b border-gray-300">
-                            <a href="#skills" class="block hover:bg-blue-100 hover:text-blue-500 transition-colors">Skills</a>
+                        <li class="menu">
+                            <a href="#skills">Skills</a>
                         </li>
-                        <li class="menu w-full text-center py-2 border-b border-gray-300">
-                            <a href="#services" class="block hover:bg-blue-100 hover:text-blue-500 transition-colors">Services</a>
+                        <li class="menu">
+                            <a href="#services">Services</a>
                         </li>
-                        <li class="menu w-full text-center py-2">
-                            <a href="#contact" class="block hover:bg-blue-100 hover:text-blue-500 transition-colors">Contact</a>
+                        <li class="menu">
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -72,59 +74,62 @@
     </header>
     
     <main>
-        <section id="home" class="flex flex-col justify-center items-center min-h-[100dvh] bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+        <section id="home" class="flex flex-col justify-center items-center min-h-[100dvh] pt-24 pb-5 bg-rose-50">
             <!-- Welcome Message -->
-            <div class="text-center m-4 max-w-3xl">
-                <h1 class="text-5xl font-bold mb-6">Welcome to Ushnika's World!!!!</h1>
-                <p class="text-lg leading-relaxed mb-4">
-                    Hey there! I'm a developer with a passion for blending creativity and technology.
+            <div class="text-center m-4 max-w-3xl opacity-100 animate-fadeIn delay-150">
+                <h1 class="text-5xl font-bold mb-6 text-shadow-lg animate-slideUp">Welcome to Ushnika's Dreamworld!</h1>
+                <p class="text-lg leading-relaxed mb-4 animate-fadeInUp">
+                    Hey there! I’m Ushnika, your friendly neighborhood developer who lives on a steady diet of coffee, code, and debugging (the ultimate combo, right?). 🚀 I’m a full-stack developer who thrives on creating seamless, intuitive experiences for users. Whether it's building pixel-perfect websites or crafting powerful back-end systems, I’m here to make ideas come to life with a dash of creativity and a sprinkle of code magic.
                 </p>
-                <p class="text-lg leading-relaxed mb-4">
-                    Right now, I'm diving deep into full-stack development—learning the ropes of both the front-end and back-end.
-                    Every line of code is like a puzzle, and I’m here for it!
+                <p class="text-lg leading-relaxed mb-4 animate-fadeInUp">
+                    If you love solving problems, staying on top of the latest tech trends, and maybe even sharing your secret pizza toppings (I’m team pineapple, don’t judge 😜), you’re in the right place! I specialize in full-stack development, so I get to play around with everything—front-end, back-end, and everything in between. Each day is a new adventure in tech, and I’m always up for the challenge!
                 </p>
-                <p class="text-lg leading-relaxed mb-4">
-                    When I'm not coding, you’ll probably find me experimenting with new tech, dreaming up ideas for my next project,
-                    or figuring out how to make things work just a little bit better. I believe in creating web experiences that are not
-                    just functional but fun and easy to use!
+                <p class="text-lg leading-relaxed mb-4 animate-fadeInUp">
+                    When I'm not coding, you’ll probably find me binge-watching cartoons, getting lost in a romcom, or traveling the world in search of the perfect pizza (it’s a journey, really). I also dabble in reading storybooks, cooking up something tasty (or burning it—let’s be honest), and embracing my inner romantic. But don’t worry, I’m still independent, bold, and genuine in everything I do.
                 </p>
-                <p class="text-lg leading-relaxed mb-4">
-                    Excited to keep learning, growing, and building something amazing. Let’s create something awesome together!
-                </p>
-                <p class="text-lg leading-relaxed mb-4">
-                    Oh, and I might just be the person who gets way too excited about a new framework or a clean piece of code.
-                    The small wins? Totally worth celebrating.
-                </p>
-                <p class="text-lg leading-relaxed">
-                    If you're looking for someone who loves a challenge and believes in learning through doing, then you're in the right place!
+                <p class="text-lg leading-relaxed mb-4 animate-fadeInUp">
+                    So, feel free to dive into my world! Explore my work, check out some projects, or just hit me up for a chat about tech, life, or the endless debate over pineapple on pizza. Let’s make something amazing together!
                 </p>
             </div>
-    
+            
             <!-- Profile Image -->
-            <img src="./img/profile.png" alt="Ushnika's Profile" class="w-40 h-40 rounded-full shadow-lg mb-6">
-    
+            <img src="./img/profile.png" alt="Ushnika's Profile" class="w-44 h-44 rounded-full shadow-lg my-6 animate-zoomIn">
+        
             <!-- Social Links -->
-            <div class="flex space-x-6 mb-8">
-                <a href="https://github.com" target="_blank" class="text-xl font-medium text-blue-500 hover:underline">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" class="text-xl font-medium text-blue-500 hover:underline">LinkedIn</a>
+            <div class="flex space-x-6 mb-8 animate-fadeInUp delay-300">
+                <a href="https://github.com" target="_blank" class="text-xl font-medium text-blue-300 hover:text-blue-500 transition-colors duration-300">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="text-xl font-medium text-blue-300 hover:text-blue-500 transition-colors duration-300">LinkedIn</a>
             </div>
-    
+        
             <!-- Resume Button -->
-            <button class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition">
+            <button class="btn bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 ease-in-out transform hover:scale-105">
                 Download Resume
             </button>
         </section>
+        
+        
+        
     <!-- About Section -->
-    <section id="about" class="min-h-screen bg-white p-8">
-        <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-        <p class="text-lg leading-relaxed">
-            I’m a passionate full-stack developer focused on creating dynamic and efficient web applications. 
-            With a keen interest in both front-end and back-end technologies, I aim to build seamless and engaging user experiences.
-        </p>
-        <p class="text-lg leading-relaxed mt-4">
-            I believe in continuous learning and always strive to keep up with the latest trends and advancements in the tech world.
-        </p>
+    <section id="about" class="bg-green-100 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6 text-shadow-lg animate-fadeIn">About Me</h2>
+            <p class="text-lg mb-6 animate-fadeInUp">
+                Hey, I’m Ushnika! A full-stack developer who can turn a cup of coffee into code—and sometimes into code that works (we’re getting there 😅). I’m passionate about solving complex problems, creating user-friendly interfaces, and working on projects that challenge me to think outside the box. But let’s face it, every project comes with a lot of bug-hunting, and I’m pretty good at it (unless it’s a typo... that’s a whole different story).
+            </p>
+            <p class="text-lg mb-6 animate-fadeInUp">
+                My passion lies in making the web better—one line of code at a time. Whether I’m crafting sleek front-end designs or building solid back-end systems, I’m all about creating solutions that work and look good doing it. I believe in learning by doing, which is why I throw myself headfirst into new tech and frameworks, and of course, I enjoy the process of turning a problem into a working solution.
+            </p>
+            <p class="text-lg mb-6 animate-fadeInUp">
+                When I’m not coding, you’ll find me watching cartoons (the classic ones, of course), enjoying a romcom (because who doesn’t love a happy ending?), or traveling and exploring new places (preferably with great food). I also love reading storybooks, cooking (and failing miserably at times—but hey, practice makes perfect!), and embracing my inner romantic. But don’t let the soft side fool you—I’m independent, bold, and always genuine in my approach to both work and life.
+            </p>
+            <p class="text-lg mb-6 animate-fadeInUp">
+                If you’re looking to collaborate on an exciting project, share tech tips, or just chat about life, feel free to reach out. I’m always up for discussing tech, life, or the eternal question: “Is pineapple a valid pizza topping?” Let’s connect and create something awesome!
+            </p>
+        </div>
     </section>
+    
+    
+    
 
     <!-- Skills Section -->
     <section id="skills" class="min-h-screen bg-gray-50 p-8">

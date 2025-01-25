@@ -5,3 +5,6 @@
 .menu{
     @apply text-lg font-semibold hover:text-blue-500 transition-all duration-300 cursor-pointer
 }
+.btn{
+    @apply px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition
+}
